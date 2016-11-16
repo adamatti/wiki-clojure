@@ -1,0 +1,5 @@
+#### Commands
+* `lein ring server`: Start the app
+#### Todo
+* Save to database
+* Create a crud
