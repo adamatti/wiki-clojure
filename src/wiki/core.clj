@@ -1,5 +1,10 @@
 (ns wiki.core
-  (:use compojure.core
+  (:use ring.middleware.resource
+        ring.middleware.content-type
+        ring.middleware.not-modified
+        ring.middleware.file
+        ring.middleware.file-info
+        compojure.core
         ring.middleware.json
         ring.util.response
   )
@@ -33,4 +38,14 @@
   (route/resources "/")
 )
 
-(def app (wrap-json-response my_routes))
+(def app
+  (->
+    (wrap-json-response my_routes)
+    (wrap-resource "bower")
+    (wrap-file-info)
+    ;(wrap-request-logging)
+    (wrap-content-type)
+    (wrap-not-modified)
+    ;(wrap-stacktrace)
+  )
+)

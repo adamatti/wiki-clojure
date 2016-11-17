@@ -17,8 +17,11 @@
 * http://clojuremongodb.info/articles/getting_started.html[mongo] / http://reference.clojuremongodb.info/index.html[api]
 * https://github.com/ptaoussanis/carmine[redis]
 * https://github.com/yogthos/Selmer[selmer](template engine)
+* https://github.com/chlorinejs/lein-bower[bower]
 
 #### References
 * https://github.com/adamatti/learn-clojure[Pet project: learn clojure]
 * https://github.com/adamatti/awesome/blob/master/clojure.adoc[Awesome list]
 * http://radar.oreilly.com/2014/03/choosing-a-templating-language-in-clojure.html[template engines]
+* http://ring-clojure.github.io/ring[ring]
+** https://github.com/ring-clojure/ring/wiki/Static-Resources[static]

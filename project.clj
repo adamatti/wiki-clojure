@@ -2,6 +2,7 @@
   :description "wiki engine"
   :plugins [
     [lein-ring "0.8.7"]
+    [lein-bower "0.5.2"]
   ]
   :ring {
     :handler wiki.core/app
@@ -16,7 +17,12 @@
     [com.novemberain/monger "3.1.0"]
     [com.taoensso/carmine "2.15.0"] ;redis
     [selmer "1.10.0"]
+
   ]
+  :bower-dependencies [
+    bootstrap "~3.3.6"
+  ]
+  :bower {:directory "resources/bower"}
   :main ^:skip-aot wiki.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})

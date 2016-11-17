@@ -9,3 +9,6 @@ pom.xml.asc
 /.nrepl-port
 .hgignore
 .hg/
+/node_modules/
+/bower_components/
+/resources/bower/
