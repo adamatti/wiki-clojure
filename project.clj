@@ -13,7 +13,8 @@
     [ring/ring "1.2.0"]
     [ring/ring-json "0.2.0"]
     [hiccup "1.0.4"]
-    [compojure "1.2.0-SNAPSHOT"]
+    [compojure "1.2.0-SNAPSHOT"],
+    [com.novemberain/monger "3.1.0"]
   ]
   :main ^:skip-aot wiki.core
   :target-path "target/%s"

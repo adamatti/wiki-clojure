@@ -1,5 +1,12 @@
 #### Commands
 * `lein ring server`: Start the app
+
 #### Todo
-* Save to database
+* Interact with database (improve)
+* Redis
 * Create a crud
+* Move properties to env vars
+
+#### References
+* https://github.com/adamatti/learn-clojure[Pet project: learn clojure]
+* https://github.com/adamatti/awesome/blob/master/clojure.adoc[Awesome list]
