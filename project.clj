@@ -1,5 +1,5 @@
-(defproject wiki "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
+(defproject wiki "0.0.1"
+  :description "wiki engine"
   :plugins [
     [lein-ring "0.8.7"]
   ]
