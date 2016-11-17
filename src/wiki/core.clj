@@ -6,6 +6,7 @@
   (:require [compojure.route :as route]
             [wiki.mongo :as db]
             [wiki.redis :as cache]
+            [wiki.view :as view]
   )
 )
 
@@ -21,9 +22,14 @@
   (cache/get "key")
 )
 
+(defn sayHelloTemplate [x]
+  (view/serve "home" {:title "test"})
+)
+
 (defroutes my_routes
   (GET "/" [] (str "Response: " (sayHelloCache "Bessias")))
   (GET "/json" [] (response (sayHello "Bessias"))) ;as json
+  (GET "/home" [] (sayHelloTemplate "Bessias"))
   (route/resources "/")
 )
 

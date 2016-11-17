@@ -2,16 +2,21 @@
 * `lein ring server`: Start the app
 
 #### Todo
-* Interact with database (improve)
-* Redis (improve)
 * Create a crud
 * Move properties to env vars
 * Add a log framework
+
+#### Improve
+* Interact with database
+* Redis
 * template engine
 
 #### Frameworks / libs
 * http://clojuremongodb.info/articles/getting_started.html[mongo] / http://reference.clojuremongodb.info/index.html[api]
+* https://github.com/ptaoussanis/carmine[redis]
+* https://github.com/yogthos/Selmer[selmer](template engine)
 
 #### References
 * https://github.com/adamatti/learn-clojure[Pet project: learn clojure]
 * https://github.com/adamatti/awesome/blob/master/clojure.adoc[Awesome list]
+* http://radar.oreilly.com/2014/03/choosing-a-templating-language-in-clojure.html[template engines]
