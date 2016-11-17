@@ -5,6 +5,7 @@
 * Create a crud
 * Move properties to env vars
 * Add a log framework
+* Connect to MQ
 
 #### Improve
 * Interact with database
