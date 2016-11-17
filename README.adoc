@@ -3,9 +3,14 @@
 
 #### Todo
 * Interact with database (improve)
-* Redis
+* Redis (improve)
 * Create a crud
 * Move properties to env vars
+* Add a log framework
+* template engine
+
+#### Frameworks / libs
+* http://clojuremongodb.info/articles/getting_started.html[mongo] / http://reference.clojuremongodb.info/index.html[api]
 
 #### References
 * https://github.com/adamatti/learn-clojure[Pet project: learn clojure]

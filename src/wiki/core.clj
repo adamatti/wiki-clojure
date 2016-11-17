@@ -5,6 +5,7 @@
   )
   (:require [compojure.route :as route]
             [wiki.mongo :as db]
+            [wiki.redis :as cache]
   )
 )
 
@@ -14,8 +15,14 @@
   (db/find-one "testCollection" {:_id "myKey"})
 )
 
+(defn sayHelloCache [x]
+  (println (str "Called say hello with " x))
+  (cache/set "key" {:lastName "Adamatti"})
+  (cache/get "key")
+)
+
 (defroutes my_routes
-  (GET "/" [] (str "Response from mongo: " (sayHello "Bessias")))
+  (GET "/" [] (str "Response: " (sayHelloCache "Bessias")))
   (GET "/json" [] (response (sayHello "Bessias"))) ;as json
   (route/resources "/")
 )
